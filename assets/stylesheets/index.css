@@ -126,3 +126,32 @@ figcaption {
 .author-name a:hover {
   text-decoration: none;
 }
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.social-icon img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 1em;
+  padding: 0.5em;
+  background: #eee;
+}
+.social-icon img:nth-child(5) {
+  width: 30px;
+  height: 30px;
+  padding: 0.2em;
+  margin-left: 1em;
+  background: white;
+  border: black;
+}
+.social-icon img:nth-child(5):hover {
+  opacity: 0.8;
+  border: none;
+}
+.social-icon img:hover {
+  border: 0.5px solid #ddd;
+  background: #fff;
+}
