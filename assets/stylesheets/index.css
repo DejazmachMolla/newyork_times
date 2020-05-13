@@ -165,13 +165,54 @@ figcaption {
 	border: 0.5px solid #ddd;
 	background: #fff;
 }
+.inflation-articles {
+	width: 100%;
+	display: grid;
+	grid-gap: 10px;
+
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+		"inflation-article-1 inflation-article-2 inflation-article-3 inflation-article-4"
+		"inflation-article-5 inflation-article-6 inflation-article-7 inflation-article-8";
+}
+.inflation-article-1 {
+	grid-area: inflation-article-1;
+}
+.inflation-article-2 {
+	grid-area: inflation-article-2;
+}
+.inflation-article-3 {
+	grid-area: inflation-article-3;
+}
+.inflation-article-4 {
+	grid-area: inflation-article-4;
+}
+.inflation-article-5 {
+	grid-area: inflation-article-5;
+}
+.inflation-article-6 {
+	grid-area: inflation-article-6;
+}
+.inflation-article-7 {
+	grid-area: inflation-article-7;
+}
+.inflation-article-8 {
+	grid-area: inflation-article-8;
+}
 .inflation {
 	background-color: yellow;
 }
+.inflation-article {
+	margin-left: 5px;
+}
 .inflation-image {
-	height: 320px;
-	width: 480px;
+	height: 300px;
+	width: 340px;
 	overflow: hidden;
+}
+.inflation img {
+	/* width: 1280px; */
 }
 
 .inflation-image-1 {
@@ -187,18 +228,20 @@ figcaption {
 .inflation-image-4 {
 	object-position: -1450px 0;
 }
+
 .inflation-image-5 {
-	object-position: 0 -400px;
+	object-position: 0 -550px;
 }
 .inflation-image-6 {
-	object-position: -450px -400px;
+	object-position: -450px -550px;
 }
 .inflation-image-7 {
-	object-position: -900px -400px;
+	object-position: -900px -550px;
 }
 .inflation-image-8 {
-	object-position: -1350px -400px;
+	object-position: -1420px -550px;
 }
+
 .social {
 	display: flex;
 	flex-direction: row;
