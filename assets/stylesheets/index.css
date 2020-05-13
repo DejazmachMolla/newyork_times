@@ -282,3 +282,29 @@ figure {
 .telescope {
 	width: 100%;
 }
+
+.footer {
+	display: grid;
+	margin: 0 20px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "footer-col-1 footer-col-2 footer-col-3 footer-col-4 footer-col-5 footer-col-6";
+}
+.footer-col-1 {
+	grid-area: footer-col-1;
+}
+.footer-col-2 {
+	grid-area: footer-col-2;
+}
+.footer-col-3 {
+	grid-area: footer-col-3;
+}
+.footer-col-4 {
+	grid-area: footer-col-4;
+}
+.footer-col-5 {
+	grid-area: footer-col-5;
+}
+.footer-col-6 {
+	grid-area: footer-col-6;
+}
