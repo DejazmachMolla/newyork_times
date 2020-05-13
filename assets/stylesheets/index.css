@@ -63,7 +63,7 @@ a {
 	font-weight: bold;
 	border: none;
 	border-radius: 3px;
-	background: rgb(50, 104, 145);
+	background: rgb(39, 80, 112);
 	opacity: 0.8;
 }
 .nav-left button:hover {
@@ -359,4 +359,28 @@ footer a:hover {
 footer > a {
 	display: inline-block;
 	width: 200px;
+}
+.footsocial {
+	padding: 1em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.footsocial .btn {
+	padding: 0.8em;
+	color: white;
+	width: 60%;
+	height: 80%;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	background: rgb(39, 80, 112);
+	opacity: 0.8;
+}
+
+.footsocial .btn:hover {
+	opacity: 1;
+	cursor: pointer;
 }
