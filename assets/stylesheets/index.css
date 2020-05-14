@@ -364,6 +364,9 @@ footer a:hover {
 	margin-right: 7px;
 	vertical-align: middle;
 }
+.footer-top-right {
+	font-weight: 700;
+}
 .lower-footer {
 	text-align: center;
 	border-top: 1px solid #ccc;
