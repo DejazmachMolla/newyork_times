@@ -12,6 +12,63 @@ a {
   text-decoration: none;
 }
 
+footer {
+  margin: 0 60px;
+  border-top: 2px solid #ccc;
+  padding-top: 1px;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+footer a {
+  color: black;
+}
+
+.footnote a {
+  color: #888;
+}
+
+.footer-container > a {
+  display: inline-block;
+  width: 200px;
+}
+
+.lower-footer li {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 10px;
+}
+
+.lower-footer a {
+  color: #666;
+}
+
+.author-name a {
+  text-decoration: underline;
+  color: #333;
+}
+
+.more-space-content a {
+  color: #222;
+  text-decoration: none;
+}
+
+.aside-link a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 1em;
+  font-size: 1.2em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: none;
+  border-top: 1px solid #ddd;
+  color: #222;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 .main-wrapper {
   width: 100%;
 }
@@ -99,10 +156,9 @@ div a.space {
 
 h1 {
   width: 50%;
-  font-size: 2em;
+  font-size: 1.2em;
   line-height: 1em;
-  font-style: italic;
-  margin: 0 auto 0.5em;
+  margin: 1em 0 0.5em 0;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -145,11 +201,6 @@ h1 {
   font-weight: bold;
 }
 
-.author-name a {
-  text-decoration: underline;
-  color: #333;
-}
-
 .author-name a:hover {
   text-decoration: none;
 }
@@ -158,6 +209,10 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.inflation img {
+  width: 800px;
 }
 
 .social-icon img {
@@ -169,6 +224,12 @@ h1 {
   background: #eee;
 }
 
+.more-astronomy img,
+.editor-picks img {
+  width: 100%;
+  cursor: pointer;
+}
+
 .social-icon img:nth-child(5) {
   width: 30px;
   height: 30px;
@@ -178,14 +239,14 @@ h1 {
   border: black;
 }
 
-.social-icon img:nth-child(5):hover {
-  opacity: 0.8;
-  border: none;
-}
-
 .social-icon img:hover {
   border: 0.5px solid #ddd;
   background: #fff;
+}
+
+.social-icon img:nth-child(5):hover {
+  opacity: 0.8;
+  border: none;
 }
 
 .inflation-articles {
@@ -202,10 +263,6 @@ h1 {
   height: 150px;
   width: 200px;
   overflow: hidden;
-}
-
-.inflation img {
-  width: 800px;
 }
 
 .inflation-image-1 {
@@ -238,20 +295,6 @@ h1 {
 
 .inflation-image-8 {
   object-position: -600px -230px;
-}
-
-.social-icon img:nth-child(5) {
-  width: 30px;
-  height: 30px;
-  padding: 0.2em;
-  margin-left: 1em;
-  background: white;
-  border: black;
-}
-
-.social-icon img:nth-child(5):hover {
-  opacity: 0.8;
-  border: none;
 }
 
 /*
@@ -293,23 +336,12 @@ p {
   line-height: normal;
 }
 
-.footnote a {
-  color: #888;
-}
-
 .footnote a:hover {
   text-decoration: none;
 }
 
 .telescope {
   width: 100%;
-}
-
-footer {
-  margin: 0 60px;
-  border-top: 2px solid #ccc;
-  padding-top: 1px;
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
 }
 
 .footer-container {
@@ -352,31 +384,18 @@ footer {
   padding-left: 15px;
 }
 
+.footer li {
+  padding: 5px 0;
+}
+
 .horizontally-divided > li:nth-child(3) {
   border-bottom: 1px solid rgb(226, 226, 226);
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
 
-footer a {
-  color: black;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-.footer li {
-  padding: 5px 0;
-}
-
 .footer h3 {
   font-size: 13px;
-}
-
-.footer-container > a {
-  display: inline-block;
-  width: 200px;
 }
 
 .footer-right-icons {
@@ -396,16 +415,6 @@ footer a:hover {
   border-top: 1px solid #ccc;
   padding-top: 15px;
   padding-bottom: 30px;
-}
-
-.lower-footer li {
-  display: inline-block;
-  padding: 0 5px;
-  font-size: 10px;
-}
-
-.lower-footer a {
-  color: #666;
 }
 
 .footsocial {
@@ -454,11 +463,6 @@ footer a:hover {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.more-space-content a {
-  color: #222;
-  text-decoration: none;
-}
-
 .time {
   font-size: 0.8em;
   color: #888;
@@ -466,12 +470,6 @@ footer a:hover {
 
 .widest-container a:hover {
   color: #888;
-}
-
-.more-astronomy img,
-.editor-picks img {
-  width: 100%;
-  cursor: pointer;
 }
 
 .artcile-1 {
@@ -525,17 +523,4 @@ Styling Article 2
   grid-template-columns: 1fr;
   grid-template-rows: 2em 1fr;
   grid-gap: 1em;
-}
-
-.aside-link a {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 1em;
-  font-size: 1.2em;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  text-decoration: none;
-  border-top: 1px solid #ddd;
-  color: #222;
 }
