@@ -172,40 +172,13 @@ h1 {
 	background: #fff;
 }
 .inflation-articles {
-	width: 100%;
+	/* width: 100%; */
 	display: grid;
-	grid-gap: 10px;
+	grid-gap: 1em;
 
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-template-areas:
-		"inflation-article-1 inflation-article-2 inflation-article-3 inflation-article-4"
-		"inflation-article-5 inflation-article-6 inflation-article-7 inflation-article-8";
+	grid-template-columns: repeat(4, 1fr);
 }
-.inflation-article-1 {
-	grid-area: inflation-article-1;
-}
-.inflation-article-2 {
-	grid-area: inflation-article-2;
-}
-.inflation-article-3 {
-	grid-area: inflation-article-3;
-}
-.inflation-article-4 {
-	grid-area: inflation-article-4;
-}
-.inflation-article-5 {
-	grid-area: inflation-article-5;
-}
-.inflation-article-6 {
-	grid-area: inflation-article-6;
-}
-.inflation-article-7 {
-	grid-area: inflation-article-7;
-}
-.inflation-article-8 {
-	grid-area: inflation-article-8;
-}
+
 .inflation {
 	background-color: yellow;
 }
@@ -213,12 +186,14 @@ h1 {
 	margin-left: 5px;
 }
 .inflation-image {
-	height: 300px;
-	width: 340px;
+	/* height: 300px; */
+	height: 150px;
+	width: 200px;
 	overflow: hidden;
 }
 .inflation img {
 	/* width: 1280px; */
+	width: 800px;
 }
 
 .inflation-image-1 {
@@ -226,26 +201,26 @@ h1 {
 	object-position: 0 0;
 }
 .inflation-image-2 {
-	object-position: -450px 0;
+	object-position: -200px 0;
 }
 .inflation-image-3 {
-	object-position: -940px 0;
+	object-position: -400px 0;
 }
 .inflation-image-4 {
-	object-position: -1450px 0;
+	object-position: -600px 0;
 }
 
 .inflation-image-5 {
-	object-position: 0 -550px;
+	object-position: 0 -230px;
 }
 .inflation-image-6 {
-	object-position: -450px -550px;
+	object-position: -200px -230px;
 }
 .inflation-image-7 {
-	object-position: -900px -550px;
+	object-position: -400px -230px;
 }
 .inflation-image-8 {
-	object-position: -1420px -550px;
+	object-position: -600px -230px;
 }
 
 .social {
