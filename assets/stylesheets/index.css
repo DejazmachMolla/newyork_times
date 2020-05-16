@@ -189,10 +189,11 @@ div a.space {
 h1 {
 	width: 80%;
 	font-size: 2.5em;
+	line-height: 1em;
 	line-height: 1.2em;
 	font-weight: 700;
 	font-style: italic;
-	margin: 0.5em auto;
+	margin: auto;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
