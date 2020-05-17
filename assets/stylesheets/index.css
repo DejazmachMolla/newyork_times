@@ -13,7 +13,7 @@ a {
 }
 
 footer {
-  margin: 0 61px;
+  margin: 0 61px 4em;
   border-top: 2px solid #ccc;
   padding-top: 1px;
   font-family: nyt-franklin, helvetica, arial, sans-serif;
@@ -148,6 +148,17 @@ h2 {
   width: 12em;
   margin-top: 0.7em;
   margin-right: 7em;
+}
+
+.expandable > button {
+  position: relative;
+  width: 100%;
+  padding: 1.5em 3em;
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  margin-top: 1px;
+  cursor: pointer;
 }
 
 .nav-left button {
@@ -566,4 +577,23 @@ Styling Article 2
   grid-template-columns: 1fr;
   grid-template-rows: 2em 1fr;
   grid-gap: 1em;
+}
+
+.expandable {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+.expand-right {
+  display: inline-block;
+  position: absolute;
+  right: 6em;
+  font-weight: 700;
+}
+
+.expand-icon {
+  transform: rotate(-90deg);
+  margin-left: 2em;
 }
