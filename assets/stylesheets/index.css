@@ -1,0 +1,599 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  margin: 0 61px 4em;
+  border-top: 2px solid #ccc;
+  padding-top: 1px;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+footer a {
+  color: black;
+}
+
+.info h3,
+.info a {
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: bold;
+}
+
+.info a {
+  color: rgb(50, 104, 145);
+}
+
+.footnote a {
+  color: #888;
+}
+
+.footer-container > a {
+  display: inline-block;
+  width: 200px;
+}
+
+.lower-footer li {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 10px;
+}
+
+.lower-footer a {
+  color: #666;
+}
+
+.author-name a {
+  text-decoration: underline;
+  color: #333;
+}
+
+.more-space-content a {
+  color: #222;
+  text-decoration: none;
+}
+
+.aside-link a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 1em;
+  font-size: 1.2em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: none;
+  border-top: 1px solid #ddd;
+  color: #222;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.main-wrapper {
+  position: relative;
+  top: 70px;
+  margin-bottom: 70px;
+  width: 100%;
+  padding: 0;
+}
+
+.container {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.narrow-container {
+  width: 50%;
+  margin: auto;
+}
+
+h2 {
+  padding: 1em 0;
+  text-align: left;
+  font-weight: bold;
+  font-size: 0.9em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.narrow-container h2 {
+  font-weight: 700;
+}
+
+.navigation {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 0;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em;
+}
+
+.navigation > * {
+  cursor: pointer;
+}
+
+.nav-element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-left img {
+  width: 1em;
+  margin: 1em;
+}
+
+.nav-middle {
+  width: 12em;
+  margin-top: 0.7em;
+  margin-right: 7em;
+}
+
+.expandable > button {
+  position: relative;
+  width: 100%;
+  padding: 1.5em 3em;
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  margin-top: 1px;
+  cursor: pointer;
+}
+
+.nav-left button {
+  padding: 0.5em;
+  margin: 1em;
+  color: white;
+  height: 80%;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  background: rgb(39, 80, 112);
+  opacity: 0.8;
+}
+
+.nav-left button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.nav-left button:nth-child(1) {
+  width: 10em;
+}
+
+div a.space {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1.3em;
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+}
+
+.space:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  width: 80%;
+  font-size: 2.5em;
+  line-height: 1em;
+  line-height: 1.2em;
+  font-weight: 700;
+  font-style: italic;
+  margin: auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.hero img {
+  width: 100%;
+  height: 50%;
+}
+
+.figcaption {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 0.5em 0 2em 0;
+  text-align: left;
+  width: 70%;
+  font-size: 0.8em;
+  line-height: 1.3em;
+  color: #666;
+}
+
+.rick {
+  color: #888;
+}
+
+.article-body {
+  color: #222;
+  line-height: 1.5em;
+  font-size: 1.3em;
+}
+
+.author-info {
+  margin-bottom: 2em;
+}
+
+.author-info span {
+  font-size: 0.7em;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.info {
+  text-align: center;
+}
+
+.empty-pad {
+  height: 10px;
+  width: 60px;
+  margin: auto;
+}
+
+.empty-pad-top {
+  border-top: 1px solid #ccc;
+}
+
+.empty-pad-bottom {
+  border-bottom: 1px solid #ccc;
+}
+
+.author-name {
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.author-name a:hover {
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.inflation img {
+  width: 800px;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 1em;
+  padding: 0.5em;
+  background: #eee;
+}
+
+.more-astronomy img,
+.editor-picks img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.social-icon img:nth-child(5) {
+  width: 30px;
+  height: 30px;
+  padding: 0.2em;
+  margin-left: 1em;
+  background: white;
+  border: black;
+}
+
+.social-icon img:hover {
+  border: 0.5px solid #ddd;
+  background: #fff;
+}
+
+.social-icon img:nth-child(5):hover {
+  opacity: 0.8;
+  border: none;
+}
+
+.inflation-articles {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.inflation-article {
+  margin-left: 5px;
+}
+
+.inflation-image {
+  height: 150px;
+  width: 200px;
+  overflow: hidden;
+}
+
+.inflation-image-1 {
+  object-position: 0 0;
+}
+
+.inflation-image-2 {
+  object-position: -200px 0;
+}
+
+.inflation-image-3 {
+  object-position: -400px 0;
+}
+
+.inflation-image-4 {
+  object-position: -600px 0;
+}
+
+.inflation-image-5 {
+  object-position: 0 -230px;
+}
+
+.inflation-image-6 {
+  object-position: -200px -230px;
+}
+
+.inflation-image-7 {
+  object-position: -400px -230px;
+}
+
+.inflation-image-8 {
+  object-position: -600px -230px;
+}
+
+.video-telescope {
+  color: #222;
+  line-height: 1.5em;
+  font-size: 1.3em;
+  padding: 1em;
+}
+
+p {
+  padding: 0.5em 0;
+}
+
+.vid-info {
+  margin-left: 1px;
+  font-size: 0.8em;
+  width: 90%;
+}
+
+.bicep2 {
+  width: 100%;
+}
+
+.footnote {
+  font-size: 0.7em;
+  color: #888;
+  line-height: normal;
+}
+
+.footnote a:hover {
+  text-decoration: none;
+}
+
+.telescope {
+  width: 100%;
+}
+
+.footer-container {
+  border-top: 1px solid #ccc;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+
+.footer {
+  display: grid;
+  margin-top: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "footer-col-1 footer-col-2 footer-col-3 footer-col-4 footer-col-5 footer-col-6";
+}
+
+.footer-col-1 {
+  grid-area: footer-col-1;
+}
+
+.footer-col-2 {
+  grid-area: footer-col-2;
+}
+
+.footer-col-3 {
+  grid-area: footer-col-3;
+}
+
+.footer-col-4 {
+  grid-area: footer-col-4;
+}
+
+.footer-col-5 {
+  grid-area: footer-col-5;
+}
+
+.footer-col-6 {
+  grid-area: footer-col-6;
+  border-left: 1px solid rgb(226, 226, 226);
+  padding-left: 15px;
+}
+
+.footer li {
+  padding: 5px 0;
+}
+
+.horizontally-divided > li:nth-child(3) {
+  border-bottom: 1px solid rgb(226, 226, 226);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.footer h3 {
+  font-size: 13px;
+}
+
+.footer-right-icons {
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+.footer-top-right {
+  font-weight: 700;
+}
+
+.lower-footer {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.footsocial {
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footsocial .btn {
+  padding: 0.8em;
+  color: white;
+  width: 60%;
+  height: 80%;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  background: rgb(39, 80, 112);
+  opacity: 0.8;
+}
+
+.footsocial .btn:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      More in Space and Astronomy
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.widest-container {
+  width: 90%;
+  margin: 3em auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 2em;
+}
+
+.more-space-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+  height: auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.time {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.widest-container a:hover {
+  color: #888;
+}
+
+.artcile-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1em 1fr;
+  grid-gap: 2em;
+  border-top: 1px solid black;
+}
+
+.link-head {
+  font-weight: bold;
+  color: #222;
+}
+
+.link-head:hover {
+  text-decoration: underline;
+}
+
+.parent-astronomy {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++
+Styling Article 2
+++++++++++++++++++++++++++++++++++++++++ */
+.artcile-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1em 1fr;
+  grid-gap: 2em;
+  border-top: 1px solid black;
+}
+
+.parent-editors-pick {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    Aside Bar
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.more-space-aside {
+  border-top: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2em 1fr;
+  grid-gap: 1em;
+}
+
+.expandable {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+.expand-right {
+  display: inline-block;
+  position: absolute;
+  right: 6em;
+  font-weight: 700;
+}
+
+.expand-icon {
+  transform: rotate(-90deg);
+  margin-left: 2em;
+}
